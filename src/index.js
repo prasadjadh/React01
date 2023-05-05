@@ -1,8 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import "./index.css"
+import React from "react";
+import ReactDOM from "react-dom";
+import fName,{lName,age} from "./App";
 
-ReactDOM.render(<App/>,document.getElementById("root"));
-
-
+ReactDOM.render(
+    <>
+    <div>
+        <ol>
+      <li>Prasad</li>
+      <li>{fName}</li>
+      <li>{lName}</li>
+      <li>{age}</li>
+        </ol>
+        
+    </div>
+    </>,document.getElementById('root')
+)
